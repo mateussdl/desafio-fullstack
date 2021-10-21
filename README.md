@@ -1,4 +1,4 @@
-# desafio-fullstack
+# Desafio Full-Stack
 Desafio vaga desenvolvedor Full-Stack
 
 Temos dois desafios abaixo para avaliar sua proficiência no desenvolvimento de aplicações web.
