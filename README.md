@@ -15,8 +15,10 @@ Você deverá construir uma página para web que liste as informações das raç
 
 Nas informações completas do cachorro, que devem ser exibidas em uma nova página, você deve exibir todas as informações contidas na api sobre o cachorro e também exibir a foto do mesmo. Deve permitir retornar para a página principal com a lista de cachorros.
 
+Aqui nós utilizamos react com material ui, se você utilizar essa tecnologia ficará bem mais legal para todos nós.
+
 ## Desafio Back-End
 
-Você deverá construir um script em qualquer linguagem backend, aqui nós utilizamos PHP, que leia a API e salve todos os seus resultados em banco de dados SQL, aqui utilizamos o mariadb/mysql. Essa consulta deve utilizar uma paginação máximo de 50 registros por consulta.
+Você deverá construir um script em qualquer linguagem backend, aqui nós utilizamos PHP, que leia a API e salve todos os seus resultados em banco de dados SQL, aqui utilizamos o mariadb/mysql. Essa consulta deve utilizar uma paginação máxima de 50 registros por consulta, implemente um loop de controle e realize várias conexões a API.
 
 Bom trabalho!
