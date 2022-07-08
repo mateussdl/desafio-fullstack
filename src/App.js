@@ -1,12 +1,17 @@
+import React, {useEffect} from 'react';
 import './App.css';
+import {dogFetch} from './API/dogFetch';
 
 function App() {
+
+  useEffect(() => {dogFetch()}, [])
+
   return (
     <div className="App">
       <div>
-        <body>
+        <div>
           <span>Título da Dog Fetch</span>
-        </body>
+        </div>
       </div>
       <div>
         <li>
