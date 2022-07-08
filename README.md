@@ -1,24 +1,70 @@
-# Desafio Full-Stack
-Desafio vaga desenvolvedor Full-Stack
+# Getting Started with Create React App
 
-Temos dois desafios abaixo para avaliar sua proficiência no desenvolvimento de aplicações web.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Ambos os desafios abaixo serão baseados na leitura de uma API de informações sobre raças de cachorros, https://thedogapi.com. Você deverá solicitar o seu acesso gratuito ao projeto para obter as credenciais de leitura, e após ter o acesso deverá realizar os desafio descritos.
+## Available Scripts
 
-Todos os seus códigos deverão ser incluídos no github de forma pública e a url do repositório deverá ser enviada por e-mail para que nosso time possa avaliar as soluções propostas. Nosso objetivo é entender o seu racioncínio e entender como você chegou a cada construção.
+In the project directory, you can run:
 
-Cumpra primeiro o desafio front-end e envie a sua solução para gente, após cumprir o desafio front-end e nos enviar vá para o do back-end.
+### `npm start`
 
-## Desafio Front-End
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Você deverá construir uma página para web que liste as informações das raças de cachorros da API, esta página deve conter no máximo 25 registros e deve permitir uma paginação para permitir visualizarmos todas as páginas de cachorros. Deve exibir na lista o nome da raça e o tempo de vida esperado e permitir uma navegação para obter as informações completas desse cachorro.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Nas informações completas do cachorro, que devem ser exibidas em uma nova página, você deve exibir todas as informações contidas na api sobre o cachorro e também exibir a foto do mesmo. Deve permitir retornar para a página principal com a lista de cachorros.
+### `npm test`
 
-Aqui nós utilizamos react com material ui, se você utilizar essa tecnologia ficará bem mais legal para todos nós.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Desafio Back-End
+### `npm run build`
 
-Você deverá construir um script em qualquer linguagem backend, aqui nós utilizamos PHP, que leia a API e salve todos os seus resultados em banco de dados SQL, aqui utilizamos o mariadb/mysql. Essa consulta deve utilizar uma paginação máxima de 50 registros por consulta, implemente um loop de controle e realize várias conexões a API.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Bom trabalho!
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
