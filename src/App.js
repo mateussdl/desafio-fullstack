@@ -1,10 +1,15 @@
 import React, {useEffect} from 'react';
 import './App.css';
-import {dogFetch} from './API/dogFetch';
+import {DogCard} from './Components/DogCard/DogCard';
+import {imageFetch} from './API/imageFetch';
+import {breedFetch} from './API/breedFetch';
 
 function App() {
 
-  useEffect(() => {dogFetch()}, [])
+  useEffect(() => {
+    imageFetch();
+    breedFetch();
+  }, [])
 
   return (
     <div className="App">
@@ -14,13 +19,7 @@ function App() {
         </div>
       </div>
       <div>
-        <li>
-          <ul>Cachorro 1</ul>
-          <ul>Cachorro 2</ul>
-          <ul>Cachorro 3</ul>
-          <ul>Cachorro 4</ul>
-          <ul>Cachorro 5</ul>
-        </li>
+        <DogCard />
       </div>
     </div>
   );
