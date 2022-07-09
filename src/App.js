@@ -20,6 +20,8 @@ function App() {
       </div>
       <div>
         <DogCard />
+        <DogCard />
+        <DogCard />
       </div>
     </div>
   );

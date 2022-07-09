@@ -10,16 +10,6 @@ export const DogCard = () => {
                     Isso é um card
                 </p>
             </Card>
-            <Card className='card1' raised >
-                <p>
-                    Isso é um card
-                </p>
-            </Card>
-            <Card className='card1' raised >
-                <p>
-                    Isso é um card
-                </p>
-            </Card>
         </div>
     )
 };
