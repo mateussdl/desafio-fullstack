@@ -19,6 +19,16 @@ function App() {
         </div>
       </div>
       <div class="grid">
+      <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
         <DogCard />
         <DogCard />
         <DogCard />
