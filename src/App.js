@@ -18,7 +18,19 @@ function App() {
           <span>Título da Dog Fetch</span>
         </div>
       </div>
-      <div>
+      <div class="grid">
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
+        <DogCard />
         <DogCard />
         <DogCard />
         <DogCard />
