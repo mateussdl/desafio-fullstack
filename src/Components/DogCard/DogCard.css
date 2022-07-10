@@ -1,5 +1,11 @@
 .card1 {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 250px;
     margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center
 }
