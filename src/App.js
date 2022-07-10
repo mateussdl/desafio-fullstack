@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <div>
         <div>
-          <span>Título da Dog Fetch</span>
+          <h1 className="title">Título da Dog Fetch</h1>
         </div>
       </div>
       <div class="grid">
