@@ -5,7 +5,7 @@ import { CardMedia } from '@mui/material';
 import { Typography } from '@mui/material';
 import './DogCard.css';
 
-export const DogCard = () => {
+export const DogCard = ({dogName, dogDescription}) => {
     return(
         <div>
             <Card className='card1' raised >
@@ -17,10 +17,10 @@ export const DogCard = () => {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Black Great Dane
+                        {dogName}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        The Great Dane is a large sized dog breed originating from Germany.
+                        {dogDescription}
                     </Typography>
                 </CardContent>
             </Card>
