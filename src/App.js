@@ -3,20 +3,21 @@ import "./App.css";
 import { DogCard } from "./Components/DogCard/DogCard";
 import { imageFetch } from "./API/imageFetch";
 import { breedFetch } from "./API/breedFetch";
+import { Grid, Container } from "@mui/material";
 
 function App() {
-//var
-const [breedsList, setBreedsList] = useState({});
+  //var
+  const [breedsList, setBreedsList] = useState([]);
+  const [imagesList, setImagesList] = useState([]);
 
-
-//funcutil
-  // const fetchALLdogs = async () => {
-  //   await imageFetch();
-  //   setBreedsList(await breedFetch());
-  // };
-  // useEffect(() => {
-  //   fetchALLdogs();
-  // }, []);
+  //funcutil
+  const fetchALLdogs = () => {
+    imageFetch(setImagesList);
+    breedFetch(setBreedsList);
+  };
+  useEffect(() => {
+    fetchALLdogs();
+  }, []);
 
   useEffect(() => {
     console.log("aqui", breedsList);
@@ -24,20 +25,22 @@ const [breedsList, setBreedsList] = useState({});
 
   //ui
   return (
-    <div className="App">
+    <Container>
       <div>
         <div>
           <h1 className="title">Título da Dog Fetch</h1>
         </div>
       </div>
-      <div class="grid">
-        <DogCard dogName="Pastor Alemão" dogDescription="12" dogImage=""/>
-        <DogCard dogName="Buldogue" dogDescription="34" dogImage=""/>
-        <DogCard dogName="Poodle" dogDescription="56" dogImage=""/>
-        <DogCard dogName="Pug" dogDescription="78" dogImage=""/>
-        <DogCard />
-      </div>
-    </div>
+      <Grid container spacing={5}>
+        {breedsList.map((item) => (
+          <DogCard
+            dogName={item.name}
+            dogDescription={item.bred_for}
+            dogImage={item.image.url}
+          />
+        ))}
+      </Grid>
+    </Container>
   );
 }
 
