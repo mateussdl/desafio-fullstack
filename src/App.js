@@ -1,45 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Routes, Route, /*Link*/ } from "react-router-dom";
 import "./App.css";
-import { DogCard } from "./Components/DogCard/DogCard";
-import { imageFetch } from "./API/imageFetch";
-import { breedFetch } from "./API/breedFetch";
-import { Grid, Container } from "@mui/material";
+import { Container } from "@mui/material";
+import { Home, Details } from "./pages";
 
 function App() {
-  //var
-  const [breedsList, setBreedsList] = useState([]);
-  const [imagesList, setImagesList] = useState([]);
-
-  //funcutil
-  const fetchALLdogs = () => {
-    imageFetch(setImagesList);
-    breedFetch(setBreedsList);
-  };
-  useEffect(() => {
-    fetchALLdogs();
-  }, []);
-
-  useEffect(() => {
-    console.log("aqui", breedsList);
-  }, [breedsList]);
-
-  //ui
-  return (
+  return(
     <Container>
-      <div>
-        <div>
-          <h1 className="title">Título da Dog Fetch</h1>
-        </div>
-      </div>
-      <Grid container spacing={5}>
-        {breedsList.map((item) => (
-          <DogCard
-            dogName={item.name}
-            dogDescription={item.bred_for}
-            dogImage={item.image.url}
-          />
-        ))}
-      </Grid>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="Details" element={<Details />} />
+      </Routes>
     </Container>
   );
 }
