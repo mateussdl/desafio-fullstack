@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 export const Details = (dog) => {
   return (
@@ -14,6 +16,7 @@ export const Details = (dog) => {
       <h1>reference_image_id</h1>
       <h1>temperament</h1>
       <h1>weight</h1>
+      <Link to="/">Home</Link>
     </div>
   );
 };
