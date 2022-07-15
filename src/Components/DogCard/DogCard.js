@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import "./DogCard.css";
 
 export const DogCard = ({ dogName, dogImage }) => {
@@ -17,6 +18,7 @@ export const DogCard = ({ dogName, dogImage }) => {
             {dogName}
           </Typography>
         </CardContent>
+        <Link to="/Details">About</Link>
       </Card>
     </div>
   );
