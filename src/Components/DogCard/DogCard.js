@@ -12,7 +12,7 @@ import "./DogCard.css";
 export const DogCard = ({ dogName, dogImage }) => {
   return (
     <div>
-      <Link to="/Details">
+      <Link className="link" to="/Details">
         <Card className="card1" raised>
           <CardActionArea>
             <CardMedia
