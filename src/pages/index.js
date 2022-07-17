@@ -1,4 +1,4 @@
-import { Details } from "./Details";
-import { Home } from "./Home"; 
+import { Details } from "./Details/Details";
+import { Home } from "./Home/Home"; 
 
 export {Details, Home};
