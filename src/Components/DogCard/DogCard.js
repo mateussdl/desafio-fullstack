@@ -6,30 +6,27 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./DogCard.css";
 
-export const DogCard = ({ dogName, dogImage }) => {
+export const DogCard = ({ dogName, dogImage, dogLife, action }) => {
   return (
-    <div>
-      <Link className="link" to="/Details">
-        <Card className="card1" raised>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={dogImage}
-              alt="Black Great Dane"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {dogName}
-              </Typography>
-            </CardContent>
-            {/* <Link to="/Details">About</Link> */}
-          </CardActionArea>
-        </Card>
-      </Link>
-    </div>
+    <Card className="card1" raised>
+      <CardActionArea onClick={action}>
+        <CardMedia
+          component="img"
+          height="140"
+          image={dogImage}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h6" component="div">
+            {dogName}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Life expectancy: {dogLife}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 };
