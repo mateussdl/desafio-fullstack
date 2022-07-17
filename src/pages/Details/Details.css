@@ -1,0 +1,14 @@
+.image {
+    width: 60px;
+    height: 60px;
+}
+
+.container {
+    flex-direction: row;
+    background-color: red;
+}
+
+#idImage {
+    width: 600px;
+    height: 600px;
+}
