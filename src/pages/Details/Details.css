@@ -1,14 +1,10 @@
-.image {
-    width: 60px;
-    height: 60px;
-}
-
-.container {
-    flex-direction: row;
-    background-color: red;
-}
-
 #idImage {
     width: 600px;
     height: 600px;
+}
+
+.button {
+    margin: 25px 0 50px 0;
+    text-decoration: none;
+    font-size: 22px;
 }
