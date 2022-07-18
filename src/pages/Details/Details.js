@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import {  Typography, Card, CardMedia } from "@mui/material";
+import { Typography, Card, CardMedia } from "@mui/material";
 import "./Details.css";
 
 export const Details = () => {
@@ -9,9 +9,12 @@ export const Details = () => {
   const dog = location.state.dog;
 
   return (
-    <Card sx={{
-      display: 'grid',
-      gridAutoFlow: 'row',}} >
+    <Card
+      sx={{
+        display: "grid",
+        gridAutoFlow: "row",
+      }}
+    >
       <div className="image">
         <CardMedia
           id="idImage"
@@ -22,21 +25,24 @@ export const Details = () => {
         />
       </div>
       <div>
-        <h1>name</h1>
+        <h1>Name</h1>
         <Typography>{dog.name}</Typography>
-        <h1>life_span</h1>
+        <h1>Life Span</h1>
         <Typography>{dog.life_span}</Typography>
-        <h1>height</h1>
+        <h1>Height</h1>
         <Typography>{dog.height.metric}</Typography>
-        <h1>weight</h1>
+        <h1>Weight</h1>
         <Typography>{dog.weight.metric}</Typography>
-        <h1>breed_group</h1>
+        <h1>Breed Group</h1>
         <Typography>{dog.breed_group}</Typography>
-        <h1>bred_for</h1>
+        <h1>Bred For</h1>
         <Typography>{location.state.dog.bred_for}</Typography>
-        <h1>temperament</h1>
+        <h1>Temperament</h1>
         <Typography>{dog.temperament}</Typography>
-        <Link to="/">Home</Link>
+        <br></br>
+        <button className="button">
+          <Link className="button" to="/">Home</Link>
+        </button>
       </div>
     </Card>
   );
