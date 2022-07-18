@@ -1,14 +1,4 @@
-/* .grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-} */
-
 .title {
   text-align: center;
   margin: 50px 0 40px 0;
 }
-
-/* .link {
-  margin-top: 380px;
-} */
