@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from "react";
-// import { imageFetch } from "../../API/imageFetch";
 import { breedFetch } from "../../API/breedFetch";
 import { DogCard } from "../../Components/DogCard/DogCard";
 import { Grid, Container } from "@mui/material";
-// import { Link } from "react-router-dom";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
   const [breedsList, setBreedsList] = useState([]);
-  // const [imagesList, setImagesList] = useState([]);
   const navigate = useNavigate();
 
 
   const fetchALLdogs = () => {
-    // imageFetch(setImagesList);
     breedFetch(setBreedsList);
   };
   useEffect(() => {
@@ -28,9 +24,9 @@ export const Home = () => {
   return (
     <Container>
       <div>
-        <h1 className="title">Título da Dog Fetch</h1>
+        <h1 className="title">The Dog API Challenge</h1>
       </div>
-      <Grid container spacing={7}>
+      <Grid container spacing={7} id="grid">
         {breedsList.map((item) => (
           <DogCard
             dogName={item.name}
